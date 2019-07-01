@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Git Handle Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Search Git Handle for Repos</h1>
+
+        <form>
+            <label for="search-handle">Search git handle</label>
+            <input type="text" name="search-handle" id="search-handle" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="errorMessage"></p>
+
+        <section id="results" class="hidden">
+            <div id="resultHeader"></div>
+            <ul id="resultsList"></ul>
+
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
